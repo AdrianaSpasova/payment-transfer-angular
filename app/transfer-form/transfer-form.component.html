@@ -1,0 +1,9 @@
+<form (ngSubmit)="onSubmit()">
+  <label>Source Account ID:</label>
+  <input type="text" [(ngModel)]="source" name="source" required>
+  <label>Destination Account ID:</label>
+  <input type="text" [(ngModel)]="destination" name="destination" required>
+  <label>Amount:</label>
+  <input type="number" [(ngModel)]="amount" name="amount" required min="0.01" step="0.01">
+  <button type="submit">Transfer</button>
+</form>

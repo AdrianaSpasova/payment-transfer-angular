@@ -1,0 +1,1 @@
+import { Component, Input } from '@angular/core'; interface Account { id: string; balance: number; } @Component({selector:'app-account-list',templateUrl:'./account-list.component.html',styleUrls:['./account-list.component.css']}) export class AccountListComponent {@Input() accounts: Account[]=[];}

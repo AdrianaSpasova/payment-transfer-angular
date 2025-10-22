@@ -1,0 +1,1 @@
+import { Component, Input } from '@angular/core'; interface Transaction {from:string;to:string;amount:number;timestamp:string;} @Component({selector:'app-transaction-list',templateUrl:'./transaction-list.component.html',styleUrls:['./transaction-list.component.css']}) export class TransactionListComponent {@Input() transactions:Transaction[]=[];}

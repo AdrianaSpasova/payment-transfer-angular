@@ -1,0 +1,9 @@
+<div class="app">
+  <h1>{{ title }}</h1>
+  <app-transfer-form (transfer)="onTransferRequested($event)"></app-transfer-form>
+  <div id="message" [style.color]="messageColor">{{ message }}</div>
+  <h2>Accounts</h2>
+  <app-account-list [accounts]="accounts"></app-account-list>
+  <h2>Transactions</h2>
+  <app-transaction-list [transactions]="transactions"></app-transaction-list>
+</div>
